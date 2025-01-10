@@ -1,0 +1,129 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    scroll-behavior: smooth;
+    background: linear-gradient(135deg, #f06, #f93, #fd6);
+}
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 1em 0;
+    text-align: center;
+    z-index: 1000;
+}
+
+.navbar ul {
+    list-style: none;
+}
+
+.navbar ul li {
+    display: inline;
+    margin: 0 1em;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #ffeb3b;
+}
+
+/* Section Styling */
+.section {
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.hero {
+    height: 100vh;
+    background: linear-gradient(135deg, #ff6f91, #ff9671, #ffc75f, #f9f871);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.about {
+    background: linear-gradient(135deg, #845ec2, #d65db1, #ff6f91);
+    color: #fff;
+}
+
+.portfolio {
+    background: linear-gradient(135deg, #ff9671, #ffc75f, #f9f871);
+}
+
+.contact {
+    background: linear-gradient(135deg, #0081cf, #00c9a7, #f9f871);
+}
+
+/* Portfolio Items */
+.portfolio-items {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+
+.portfolio-item {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.portfolio-item:hover {
+    transform: scale(1.05);
+}
+
+/* Button Styling */
+button {
+    padding: 10px 20px;
+    border: none;
+    background: #ffeb3b;
+    color: #333;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+}
+
+button:hover {
+    background: #333;
+    color: #ffeb3b;
+}
+
+/* Section Headings */
+h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #fff;
+}
+
+/* Contact Link Styling */
+a {
+    color: #ffeb3b;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
